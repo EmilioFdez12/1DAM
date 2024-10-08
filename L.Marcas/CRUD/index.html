@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Ejemplo práctica 3</title>
+</head>
+
+<body>
+  <div class="titulo">
+    <div class="textoTitulo">Formularios PHP</div>
+    <form action="crearbd.php" method="post">
+      <!-- Boton para crear la base de datos -->
+      <input class="baseDatos" type="submit" value="Crear Base de Datos">
+    </form>
+  </div>
+
+  <div class="contenedorA">
+    <form action="introducirregistro.php" method="post">
+      <div class="introduceDatos">
+        Nuevo Cliente
+        <br>
+        <input class="texto" type="text" placeholder="Nombre" name="nombre" />
+        <input class="texto" type="text" placeholder="Edad" name="edad" />
+        <input class="texto" type="text" placeholder="Fecha de Nacimiento" name="nacimiento" maxlength="10"
+          onkeyup="formatoFecha(this)">
+        <input class="texto" type="text" placeholder="Nº Hijos" name="nHijos" maxlength="2">
+        <input class="texto" type="text" placeholder="Domicilio" name="domicilio">
+        <div class="botonCliente">
+        <input class="confirmar" type="submit" value="Enviar" style="margin-right: 2vh;">
+    </form>
+    <form action="mostrar.php" method="post">
+      <input class="confirmar" type="submit" value="Mostrar valores">
+    </form>
+    </div>
+    <form action="eliminarregistro.php" method="post">
+      <br>
+      Eliminar Cliente
+      <br>
+      <input class="texto" type="number" placeholder="Nº de Registro a Eliminar" name="identificador" style="width: 18vw;">
+      <button class="confirmar" type="submit">Eliminar valores</button>
+    </form>
+
+    <form action="actualizar.php" method="post">
+      <br>
+      Actualizar Cliente
+      <br>
+      <input class="texto" type="text" placeholder="Nombre" name="nombre" />
+      <input class="texto" type="text" placeholder="Edad" name="edad" />
+      <input class="texto" type="text" placeholder="Fecha de Nacimiento" name="nacimiento" maxlength="10"
+        onkeyup="formatoFecha(this)">
+      <input class="texto" type="text" placeholder="Nº Hijos" name="nHijos" maxlength="2">
+      <input class="texto" type="text" placeholder="Domicilio" name="domicilio">
+      <input class="confirmar" type="submit" value="Actualizar" style="margin-top:2vh ;">
+
+    </form>
+ <!--    <form action="eliminarbd.php" method="post">
+      <button type="submit">Eliminar Base de Datos</button>
+    </form> -->
+  </div>
+  </div>
+</body>
+<script>
+  function formatoFecha(input) {
+    var valor = input.value;
+    if (valor.length == 2 || valor.length == 5) {
+      valor += "/";
+      input.value = valor;
+    }
+  }
+</script>
+
+</html>

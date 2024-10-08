@@ -1,0 +1,10 @@
+package prog.unidad03.repeticion;
+
+public class TablasMultiplicar {
+
+  public static void main(String[] args) {
+    // TODO Auto-generated method stub
+
+  }
+
+}

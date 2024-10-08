@@ -1,0 +1,102 @@
+* {
+    font-family: 'Dela Gothic One', cursive;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(226, 226, 226);
+    background-image: linear-gradient(90deg, #222222, #292929, #242424, #303030);
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ff7269;
+    font-size: 9vh;
+    text-shadow: #ff7269 0px 0px 5px ;
+   
+}
+.imagen{
+    margin-left:20px;
+    margin-top:20px;
+    display: flex;
+    align-items: center;
+    border-radius:20px;
+    height: 175px;
+    width: 175px;
+    border: #ff7269 outset 5px;
+    box-shadow: #682b26 5px 5px 0px 4px;
+}
+
+
+table, td, th{
+    margin-top: 20px;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius: 4px;
+}
+
+.ed{
+    background: linear-gradient(60deg, #204550,  #2e6274, #3e859c, #75dbfd);
+    border: black solid 2px;
+}
+
+.pg{
+    background: linear-gradient(60deg,rgb(15, 82, 47), rgb(26, 116, 69), rgb(23, 121, 70),rgb(39, 172, 103));
+    border: black solid 2px;
+}
+
+.bd{
+    background: linear-gradient(60deg, #4e1818,  #6e2323, #ad3333, #ce4848);
+    border: black solid 2px;
+}
+
+.lm{
+    background: linear-gradient(60deg, #6d681e,  #99911e, #b6ad34, #e4da55);
+    border: black solid 2px;
+}
+
+.si{
+    background: linear-gradient(60deg, #4f2255,  #71267a, #9f2fad, #d437e9);
+    border: black solid 2px;
+}
+
+.fol{
+    background: linear-gradient(60deg, #1b263d,  #263c6d, #2853ad, #5986e9);
+    background-color: #1b263d;
+    border: black solid 2px;
+}
+
+.recreo{
+    justify-content: center;
+    font-size: 50px;
+    letter-spacing: 25px;
+    background-color: #9da4df;
+    border: black solid 2px;
+    text-align: center;
+    
+}
+
+
+.dias{
+    background-color: #1d2c28;
+    border: black solid 2px;
+}
+
+.horas {
+    color:rgb(33, 33, 33);
+    background-color: rgb(201, 201, 201);
+    border: black solid 2px;
+}
+
+.hora {
+    background-color: rgb(27, 27, 27);
+    border: black solid 2px;
+}
+

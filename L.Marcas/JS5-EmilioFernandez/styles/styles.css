@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+}
+
+body {
+
+  /*Patron con animacion*/
+  width: 100%;
+  height: 100%;
+  background: #121212;
+  background: linear-gradient(135deg,
+      #808080 25%,
+      #808080 25%,
+      #ffffff 50%,
+      #808080 50%,
+      #808080 75%,
+      #808080 75%,
+      #ffffff);
+  background-size: 120px 120px;
+
+  animation: move 7s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 60px;
+  }
+}
+
+.body-darkmode {
+  /*Patron con animacion*/
+  width: 100%;
+  height: 100%;
+  background: #2c2c2c;
+  background: linear-gradient(135deg,
+      #151515 25%,
+      #151515 25%,
+      #303030 50%,
+      #151515 50%,
+      #151515 75%,
+      #151515 75%,
+      #303030);
+  background-size: 120px 120px;
+
+  animation: move 7s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 60px;
+  }
+}
+
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 97.8vw;
+  height: 100vh;
+  position: relative;
+}
+
+.foto {
+  height: 100vh;
+  width: 100vw;
+}
+
+.button-container {
+  position: absolute;
+  top: 50vh;
+  right: 104vh;
+}
+
+.button {
+  width: 3vw;
+  height: 6vh;
+  background-color: #696969;
+  color: #fff;
+  border-radius: 5vh;
+  text-align: center;
+  font-size: 3vh;
+  box-shadow: 0 0 5px 1px #000000;
+  z-index: 100;
+  border: #ffffff;
+  transition: 0.5s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.button:active {
+  background-color: #151515;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35%;
+  margin-bottom: 25%;
+  border-bottom: 15px solid white;
+  transform: rotate(180deg);
+}
+
+#contenedor2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 98vw;
+  height: 100vh;
+}
+
+.carousel {
+  position: relative;
+  width: 35vw;
+  margin-inline: auto;
+  overflow: hidden;
+  border: 5px solid #151515;
+  border-radius: 0.5vh;
+  margin-bottom: 1vh;
+}
+
+.dark-borderFoto {
+  border: 5px solid #dddddd;
+  box-shadow: #dddddd 0 0 10px 1px;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 1s ease;
+  padding-left: 0;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 140%;
+  transform: translateX(-800%);
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  color: white;
+  text-decoration: none;
+  background-color: #151515;
+  box-shadow: 0 0 10px 1px #151515;
+  padding: 10px;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 140%;
+  transform: translateX(-800%);
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  color: white;
+  text-decoration: none;
+  background-color: #151515;
+  box-shadow: 0 0 10px 1px #151515;
+  padding: 10px;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-nextPrev {
+  background-color: #dddddd;
+  box-shadow: 0 0 10px 1px #c9c9c9;
+  color: #151515;
+}
+
+
+.carousel-next {
+  transform: translateX(800%);
+}
+
+#reanudar,
+#parar {
+  margin: 1vh;
+  height: 8vh;
+}
+
+#reanudar:hover,
+#parar:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.cuadroReproductor {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  border: 8px double #151515;
+  margin-bottom: 1vh;
+}
+
+.dark-reproductor {
+  display: flex;
+  flex-direction: row;
+  border: 8px double #dddddd;
+}
+
+
+.dark-input {
+  fill: #dddddd;
+}
+
+
+/*Boton modo oscuro de UIVERSE.IO*/
+.switch {
+  display: block;
+  --width-of-switch: 5em;
+  --height-of-switch: 2.5em;
+  /* size of sliding icon -- sun and moon */
+  --size-of-icon: 1.6em;
+  /* it is like a inline-padding of switch */
+  --slider-offset: 0.3em;
+  position: relative;
+  width: var(--width-of-switch);
+  height: var(--height-of-switch);
+  border: 3px solid black;
+  border-radius: 25px;
+  margin: 1vh;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4f4f5;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: var(--size-of-icon, 1.4em);
+  width: var(--size-of-icon, 1.4em);
+  border-radius: 20px;
+  left: var(--slider-offset, 0.3em);
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+  ;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #303136;
+}
+
+input:checked+.slider:before {
+  left: calc(100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em)));
+  background: #303136;
+  /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}

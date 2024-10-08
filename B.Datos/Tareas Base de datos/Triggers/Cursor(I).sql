@@ -1,0 +1,24 @@
+CREATE SCHEMA test;
+USE test;
+
+CREATE TABLE alumnos(
+id INT PRIMARY KEY,
+nombre VARCHAR(50),
+apellido1 VARCHAR(50),
+apellido2 VARCHAR(50),
+fechaNacimiento DATE
+);
+
+
+ALTER TABLE alumnos
+ADD edad INT;
+
+DELIMITER //
+
+CREATE FUNCTION DETERMINISTIC
+BEGIN
+DECLARE v_fecha DATE;
+
+END//
+
+DELIMITER ;

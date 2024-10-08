@@ -1,0 +1,75 @@
+-- CREATE SCHEMA gestionrestaurante;
+-- USE gestionrestaurante;
+
+CREATE TABLE restaurante(
+COD_REST CHAR(5) PRIMARY KEY,
+Nombre VARCHAR(30),
+Licencia_Fiscal CHAR(20),
+Domicilio VARCHAR(50),
+Fecha_Apertura DATE,
+Horario TIME,
+COD_LOCALIDAD INT
+);
+
+ALTER TABLE restaurante
+ADD FOREIGN KEY (COD_LOCALIDAD) REFERENCES localidad(COD_LOCALIDAD);
+
+ALTER TABLE restaurante
+ADD FOREIGN KEY (COD_REST) REFERENCES rest_empleado(COD_REST);
+
+
+
+CREATE TABLE titular(
+DNI_TITULAR CHAR(9) PRIMARY KEY,
+Nombre VARCHAR(30),
+Domicilio VARCHAR(50),
+COD_REST CHAR(5)
+);
+
+
+CREATE TABLE empleado(
+DNI_EMPLEADO CHAR(9) PRIMARY KEY,
+Nombre VARCHAR(30),
+Domicilio VARCHAR(50)
+);
+
+
+CREATE TABLE existencias(
+COD_ARTICULO CHAR(9) PRIMARY KEY,
+Nombre VARCHAR(30),
+Cantidad INT,
+Precio DECIMAL(16,2),
+COD_REST CHAR(5),
+	CHECK (Precio > 0)
+   -- CHECK( 0 < Cantidad < 100 ) 
+);
+
+
+CREATE TABLE localidad(
+COD_LOCALIDAD INT PRIMARY KEY,
+Nombre VARCHAR(30)
+);
+
+
+CREATE TABLE rest_empleado(
+COD_REST CHAR(5) PRIMARY KEY,
+DNI_EMPLEADO VARCHAR(30),
+FUNCION VARCHAR(20),
+	CHECK (FUNCION =  'CAMARERO' 'LIMPIEZA' 'COCINERO')
+);
+
+
+ALTER TABLE rest_empleado
+ADD FOREIGN KEY (COD_REST) REFERENCES titular(COD_REST);
+
+ALTER TABLE rest_empleado
+ADD FOREIGN KEY (DNI_EMPLEADO) REFERENCES empleado(DNI_EMPLEADO);
+
+
+ALTER TABLE restaurante 
+DROP Horario;
+
+ALTER TABLE empleados 
+ADD fecha_nacimiento DATE;
+
+

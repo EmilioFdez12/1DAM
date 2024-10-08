@@ -1,0 +1,17 @@
+package prog.unidad03.excepciones;
+
+import java.util.Scanner;
+
+public class MayorMenorMediaExcepcionesApp {
+
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("MAYOR, MENOR Y MEDIA (A PRUEBA DE USUARIOS MALICIOSOS");
+    System.out.println("-----------------------------------------------------");
+    
+    System.out.println("¿Cuantos números desea introducir?");
+    
+    sc.close();
+  }
+
+}

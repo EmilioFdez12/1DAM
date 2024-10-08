@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Enlazo los estilos-->
+    <link rel="stylesheet" href="styles/styles_login.css">
+    <!--Icono-->
+    <link rel="icon" href="images/favicon-apex.png" type="image/x-icon">
+    <title>ApexRev</title>
+</head>
+
+<body>
+    <!--Formulario para registrarse y con sus patrones corresponedientes-->
+    <div class="form-container">
+        <p class="title">SIGN UP</p>
+        <form class="form">
+            <div class="input-group">
+                <label for="username">Name</label>
+                <input type="text" name="name" id="username"
+                    pattern="([A-ZÁÉÍÓÚ][a-záéíóú]+(\s[A-ZÁÉÍÓÚ][a-záéíóú]+)*)?"
+                    title="El nombre debe comenzar con mayúscula y contener solo letras, espacios y caracteres acentuados">
+                
+                    <div class="input-group">
+                    <label for="username">Last Name</label>
+                    <input type="text" name="lastname" id="username"
+                        pattern="([A-ZÁÉÍÓÚ][a-záéíóú]+(\s[A-ZÁÉÍÓÚ][a-záéíóú]+)*)?"
+                        title="El nombre debe comenzar con mayúscula y contener solo letras, espacios y caracteres acentuados">
+                    <div class="input-group">
+
+                        <label for="username">Email</label>
+                        <input type="text" name="email" id="username"
+                            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                            title="Ingrese una dirección de correo electrónico válida">
+                        <div class="input-group">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" id="username" pattern="^.{4,20}$"
+                                title="Debe tener entre 4 y 20 caracteres">
+                        </div>
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" pattern="^.{4,20}$"
+                                title="Debe tener entre 4 y 20 caracteres">
+                        </div>
+                        <!--Este sirve para probar los patterns-->
+                        <button class="sign">
+                            SIGN IN
+                        </button>
+                        <!--Y este para ir a la siguiente página-->
+                        <a href="index.html">
+                            <div class="nextpage">
+                                » NEXT «
+                            </div>
+                        </a>
+
+        </form>
+
+        <!--Video de "fondo" -->
+        <video autoplay muted loop>
+            <source src="images/login-m/onboardalonso.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+
+    </div>
+</body>
+
+</html>

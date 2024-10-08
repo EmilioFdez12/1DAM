@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CAR GALLERY</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="contenedor">
+    <div class="titulo">
+      <img class="foto" src="images/portada.png">
+      <div class="button-container">
+        <a href="#contenedor2">
+          <button class="button">
+            <div class="arrow-up"></div>
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Galería -->
+  <div id="contenedor2">
+    <!-- Botón para el modo oscuro -->
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle" onclick="modoOscuroActivacion()">
+      <span class="slider"></span>
+    </label>
+    <!-- Carousel -->
+    <div class="carousel">
+      <ul class="carousel-inner">
+        <img class="fotos" src="images/f40.jpg">
+        <img class="fotos" src="images/audi.jpg">
+        <img class="fotos" src="images/civic.jpg">
+        <img class="fotos" src="images/gti.jpg">
+        <img class="fotos" src="images/lambo.jpg">
+        <img class="fotos" src="images/porsche911.jpg">
+        <img class="fotos" src="images/toyota_mr2.jpg">
+      </ul>
+    </div>
+    </section>
+    <!-- Botones para avanzar y retroceder las fotos -->
+    <a href="" class="carousel-prev">&#10094;</a>
+    <a href="" class="carousel-next">&#10095;</a>
+    <!-- Reproductor para la galería  -->
+    <div class="cuadroReproductor">
+      <div id="reanudar">
+        <svg id="botonSvg" xmlns="http://www.w3.org/2000/svg" fill="#151515" height="57" width="55"
+          viewBox="0 0 384 512">
+          <path
+            d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+        </svg>
+      </div>
+      <div id="parar">
+        <svg id="botonSvg2" xmlns="http://www.w3.org/2000/svg" fill="#151515" height="60" width="55"
+          viewBox="0 0 320 512">
+          <path
+            d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Biblioteca GSAP para las animaciones -->
+  <script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
+  <script src="js/js.js"></script>
+</body>
+
+</html>

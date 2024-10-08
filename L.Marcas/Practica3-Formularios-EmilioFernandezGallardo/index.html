@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--PRIMERA PÁGINA-->
+    <div class="contenedora">
+        <nav class="navegacion" id="inicio">
+            <div class="navegaciontitulo">
+                <!--Barras de menú-->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="52"
+                    height="42" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC069" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 6l169 0"></path>
+                    <path d="M4 12l169 0"></path>
+                    <path d="M4 18l1699  0"></path>
+                </svg>
+            </div>
+
+            <!--Botones-->
+            <div class="botones">INICIO</div>
+            <a href="#formulario1">
+                <div class="botones">Formulario 1</div>
+            </a>
+            <a href="#formulario2">
+                <div class="botones">Formulario 2</div>
+            </a>
+        </nav>
+
+        <div class="contenedortitulo">
+            <!--Añado el titulo, que es una imagen-->
+            <div class="titulo"></div>
+            <img src="images/Kaisso.png">
+
+            <div class="textoexterno">
+                <div class="textotitulo">
+                    KAISSOLEUM es un apasionante videojuego de lucha que nos sumerge en un coliseo místico y enigmático
+                    donde los guerreros
+                    de diversas épocas y culturas se enfrentan en combates épicos. Desde los días del antiguo Imperio
+                    Romano hasta las filas
+                    de los formidables tercios españoles, pasando por los valientes guerreros griegos y los temibles
+                    jinetes otomanos, este
+                    juego nos transporta a través del tiempo y el espacio para vivir batallas a vida o muerte.
+                    <br><br>
+                    El juego presenta una trama envolvente que explora un misterio que trasciende el tiempo. Los
+                    jugadores desentrañarán secretos
+                    y descubrirán la razón detrás de estas batallas intertemporales. A medida que avanzan en la
+                    historia, se encontrarán con
+                    personajes históricos y aprenderán sobre los eventos que dieron forma a cada era representada en el
+                    juego.
+                </div>
+            </div>
+        </div>
+        <div class="foto"><img class="fotolateral" src="images/portada.png"></div>
+    </div>
+
+    <!--SEGUNDA PÁGINA-->
+    <div class="contenedora">
+
+        <nav class="navegacion" id="formulario1">
+            <div class="navegaciontitulo">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="52"
+                    height="42" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFD700" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 6l169 0"></path>
+                    <path d="M4 12l169 0"></path>
+                    <path d="M4 18l1699  0"></path>
+                </svg>
+
+            </div>
+            <!--Agregamos los enlaces-->
+            <a href="#inicio">
+                <div class="botones">INICIO </div>
+            </a>
+
+            <div class="botones">Formulario 1</div>
+
+            <a href="#formulario2">
+                <div class="botones">Formulario 2 </div>
+            </a>
+        </nav>
+
+        <div class="contenedortitulo">
+            <div class="titulo"><button class="loggear">SIGN UP</button><button class="loggear">LOG IN</button></div>
+
+            <div class="textoexterno">
+                <div class="textotitulo2">
+                    <form class="form1">
+                        <div class="title">Bienvenido al Kaissoleum<br><span>Inicia sesion para continuar</span></div>
+                        <!--Patrones de Nombre y Apellidos-->
+                        <form class="form1">
+                            <div class="title">Bienvenido al Kaissoleum<br><span>Inicia sesión para continuar</span>
+                            </div>
+                            <input class="input" name="Name" placeholder="Nombre" type="text"
+                                pattern="([A-ZÁÉÍÓÚ][a-záéíóú]+(\s[A-ZÁÉÍÓÚ][a-záéíóú]+)*)?"
+                                title="El nombre debe comenzar con mayúscula y contener solo letras, espacios y caracteres acentuados">
+                            <input class="input" name="Surname" placeholder="Apellido" type="text"
+                                pattern="([A-ZÁÉÍÓÚ]|[a-záéíóú]+\(\s[A-ZÁÉÍÓÚ]|[a-záéíóú]+)*)"
+                                title="El apellido debe contener solo letras, espacios y carácteres acentuados (Ej: De La Fuente)">
+                            <input class="input" name="email" placeholder="Email" type="email"
+                                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                                title="Ingrese una dirección de correo electrónico válida">
+                            <!--La contraseña debe tener 4 o más carácteres y 12 o menos carácteres-->
+                            <input class="input" name="password" placeholder="Contraseña" type="password"
+                                pattern="^.{4,12}$" title="La contraseña debe tener entre 4 y 12 caracteres">
+                            <input class="input" name="Location" placeholder="Localización" type="text"
+                                pattern="([A-ZÁÉÍÓÚ][a-záéíóú]+(\s[A-ZÁÉÍÓÚ][a-záéíóú]+)*)?"
+                                title="El nombre debe comenzar con mayúscula y contener solo letras, espacios y caracteres acentuados">
+                            <button class="button-confirm">ENVIAR</button>
+                        </form>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--Añadimos la foto-->
+        <div class="foto"><img class="fotolateral" src="images/espartano.png"></div>
+    </div>
+
+    <!--TERCERA PÁGINA-->
+    <div class="contenedora">
+
+        <nav class="navegacion2">
+            <div class="navegaciontitulo">
+
+                <!--SVG icono de las 3 líneas horizontales tipo MENÚ-->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="52"
+                    height="42" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFD700" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 6l169 0"></path>
+                    <path d="M4 12l169 0"></path>
+                    <path d="M4 18l1699  0"></path>
+                </svg>
+
+            </div>
+            <!--Agregamos los enlaces-->
+            <a href="#inicio">
+                <div class="botones">INICIO </div>
+            </a>
+
+            <a href="#formulario1">
+                <div class="botones">Formulario 1 </div>
+            </a>
+            
+            <div class="botones">Formulario 2</div>
+        </nav>
+
+        <div class="contenedortitulo">
+
+            <!--Formulario 2-->
+            <div class="testbox" id="formulario2">
+                <form class="form2">
+                    <p id="h1">Feedback Form</p>
+                    <p id="h4">¿Cuáles son tus impresiones?<span>*</span></p>
+                    <table>
+                        <tr>
+                            <th>Muy poco Satisfecho</th>
+                            <th>Poco Satisfecho</th>
+                            <th>Satisfecho</th>
+                            <th>Muy Satisfecho</th>
+                        </tr>
+                        <tr>
+                            <!--Metemos las ESTRELLAS-->
+                            <div class="rating">
+                                <input type="radio" id="star-1" name="star-radio" value="star-1">
+                                <label for="star-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path pathLength="360"
+                                            d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+                                        </path>
+                                    </svg>
+                                </label>
+                                <input type="radio" id="star-2" name="star-radio" value="star-1">
+                                <label for="star-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path pathLength="360"
+                                            d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+                                        </path>
+                                    </svg>
+                                </label>
+                                <input type="radio" id="star-3" name="star-radio" value="star-1">
+                                <label for="star-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path pathLength="360"
+                                            d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+                                        </path>
+                                    </svg>
+                                </label>
+                                <input type="radio" id="star-4" name="star-radio" value="star-1">
+                                <label for="star-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path pathLength="360"
+                                            d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+                                        </path>
+                                    </svg>
+                                </label>
+                            </div>
+                            <br>
+                            <br>
+                            <table>
+                                <br>
+                                <br>
+                                <tr>
+                                    <!--Meto los checkoboxes-->
+                                    <p id="h4">¿Te gustaría ver un modo historia de este juego?<span>*</span></p>
+                                    <br>
+                                    <br>
+                                    <div class="wrapper">
+                                        <div class="option">
+                                            <input class="input2" type="radio" name="btn" value="option1" checked="">
+                                            <div class="btn">
+                                                <span class="span">SI</span>
+                                            </div>
+                                        </div>
+                                        <div class="option">
+                                            <input class="input2" type="radio" name="btn" value="option1" checked="">
+                                            <div class="btn">
+                                                <span class="span">NO</span>
+                                            </div>
+                                        </div>
+                                        <div class="option">
+                                            <input class="input2" type="radio" name="btn" value="option1" checked="">
+                                            <div class="btn">
+                                                <span class="span">SI/NO</span>
+                                            </div>
+                                        </div>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <br>
+                            <!--Metemos Seleccion-->
+                            <label for="cars">Elige un personaje :</label>
+                            <select id="cars" name="cars">
+                                <option value="Roman">Romano</option>
+                                <option value="greek">Griego</option>
+                                <option value="piquero">Piquero</option>
+                                <option value="otomanos">Otomano</option>
+                            </select>
+                            <br>
+                            <br>
+                            <br>
+                            <!--Metemos campo Date para preguntar la fecha de Nacimiento-->
+                            Cuantos años tienes <input id="nacimiento" type="date">
+                            <!--Campo de texto para escribir hasta 500 carácteres-->
+                            <p id="h4">Si tienes alguna sugerencia, no dudes en decirnosla</p>
+                            <textarea rows="7" maxlength="500" placeholder="500 carácteres máximo"></textarea>
+                            <button class="feedback" href="/" type="submit">Send Feedback</button>
+                </form>
+            </div>
+            <!--Footer para avisar de lo de los datos-->
+            <footer>~Todos los datos que nos proporciones seran registrados y guardados en una base de datos.~</footer>
+        </div>
+        <div class="foto"><img class="fotolateral" src="images/fotolateral.png"></div>
+    </div>
+
+
+</body>
+
+</html>

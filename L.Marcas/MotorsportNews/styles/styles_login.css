@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding:0;
+  }
+    
+  body {
+    background-color: #1F222C;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+video {
+    position: fixed; /*Si no utilizo esto no puedo colocar la imagen bien, se sale fuera de  la pantalla*/
+    top: 50%;
+    left: 70%;
+    width: 70%;
+    height: 70%;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.form-container {
+    margin-top: 2.9em;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: 80vh;
+    border-radius: 0.1em;
+    background-color:#1F222C;
+    padding: 2rem;
+    color: rgba(243, 244, 246, 1);
+    cursor: pointer;
+  }
+  
+  .title {
+    border-bottom:0.01em white solid;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+ /*Estilos de formulario*/ 
+  .form {
+    margin-top: 1.5rem;
+    margin-right: 2.5rem;
+  }
+  
+  .input-group {
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .input-group label {
+    display: block;
+    color: rgba(156, 163, 175, 1);
+    margin-bottom: 4px;
+    margin-right: 0.5rem;
+  }
+  
+  .input-group input {
+    width: 100%;
+    border-radius: 0.375rem;
+    border: 1px solid #405964;
+    outline: 0;
+    background-color:#1F222C;
+    padding: 0.75rem 1rem;
+    color:#0090d0 ;
+    font-weight: bold;
+  }
+  
+  .input-group input:focus {
+    border-color:#0090d0;
+  }
+  
+  /*Personalizacion de botones*/
+  .sign {   
+    width: 60%;
+    background-color:#0090d0;
+    padding: 0.75rem;
+    text-align: center;
+    color:#fff6e6;
+    border: 0.01em solid white;
+    border-radius: 0.2rem;
+    font-weight: 600;
+    margin-top:1em;
+    box-shadow: #0090d0 0 0 10px 0;
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+ 
+  .signup {
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 2rem;
+    cursor: pointer;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .nextpage {   
+    width: 50%;
+    background-color:#ca2525;
+    padding: 0.75rem;
+    text-align: center;
+    color:#fff6e6;
+    border: 0.01em solid white;
+    border-radius: 0.2rem;
+    font-weight: 600;
+    margin-top:1em;
+    box-shadow: #da3a3a 0 0 10px 0;
+    cursor: pointer;
+    font-size: 1.5em;
+
+  }

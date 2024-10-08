@@ -1,0 +1,66 @@
+package prog.unidad03.excepciones;
+
+import java.util.Scanner;
+
+public class MayorMenorMediaExcepcionesApp {
+
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("MAYOR, MENOR Y MEDIA (A PRUEBA DE USUARIOS MALICIOSOS)");
+    System.out.println("-----------------------------------------------------");
+
+    int numDeseados = 0;
+    double mayor = 0;
+    double menor = 0;
+    double suma = 0;
+    
+    boolean valorValido = false;
+
+    while (!valorValido) {
+      try {
+        System.out.print("Cuantos numeros desea introducir: ");
+        numDeseados = Integer.parseInt(sc.nextLine());
+        if (numDeseados >= 1) {
+          valorValido = true;
+        } else {
+          System.out.println("Por favor, introduzca un número mayor o igual a 1.");
+        }
+      } catch (NumberFormatException e) {
+        System.out.println("El valor introducido no es un número entero correcto. Inténtelo de nuevo.");
+      }
+    }
+
+    for (int i = 1; i <= numDeseados; i++) {
+      valorValido = false;
+      
+      while (!valorValido) {
+        try {
+          System.out.print("Introduce el numero " + i + ": ");
+          double numero = Double.parseDouble(sc.nextLine());
+
+          if (numero > mayor) {
+            mayor = numero;
+          }
+
+          if (numero < menor) {
+            menor = numero;
+          }
+          
+          suma += numero;
+
+          valorValido = true;
+        } catch (NumberFormatException e) {
+          System.out.println("El valor introducido no es un número real válido. Inténtelo de nuevo.");
+        }
+      }
+    }
+
+    double media = (suma / numDeseados);
+
+    System.out.println("El número mayor es " + mayor);
+    System.out.println("El número menor es " + menor);
+    System.out.println("La media es " + media);
+
+    sc.close();
+  }
+}

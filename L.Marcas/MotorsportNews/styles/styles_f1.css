@@ -1,0 +1,536 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1F222C;
+}
+
+.contenedorb {
+  display: flex;
+  width: 97vw;
+  height: 99vh;
+  flex-direction: column;
+}
+
+.contenedorcabecera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 97vw;
+  padding-bottom: 5px;
+  margin-top: 2vh;
+}
+
+.contenedormenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Acumin', sans-serif;
+  font-size: 150px;
+  color: #ffffff;
+  width: 90vw;
+  height: 20vh;
+  margin-left: 0.4em;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  gap: 0.1em;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.1em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.1em
+}
+
+.card1 {
+  width: 12vw;
+  height: 18vh;
+  outline: none;
+  border: none;
+  background: #fff6e6;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+  border-radius: 5px;
+}
+
+.f1 {
+  width: 6vw;
+  height: 3vh;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.card2 {
+  width: 12vw;
+  height: 18vh;
+  outline: none;
+  border: none;
+  background: #fff6e6;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+  border-radius: 5px;
+
+}
+
+.f2 {
+  width: 6vw;
+  height: 3vh;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.card3 {
+  width: 12vw;
+  height: 18vh;
+  outline: none;
+  border: none;
+  background: #fff6e6;
+  box-shadow: #32325d40 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+  border-radius: 5px;
+
+}
+
+.f3 {
+  width: 6vw;
+  height: 3vh;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.card4 {
+  width: 12vw;
+  height: 18vh;
+  outline: none;
+  border: none;
+  background: #fff6e6;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+  border-radius: 5px;
+
+}
+
+.wec {
+  width: 6vw;
+  height: 3vh;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.card5 {
+  width: 30vw;
+  height: 18vh;
+  outline: none;
+  border: none;
+  margin-top: 7.5vh;
+  background: #fff6e6;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+  border-radius: 5px;
+}
+
+.apxrevmini {
+  width: 10vw;
+  height: 10vh;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.02;
+  background-color: #ff1d01;
+  box-shadow: #ff1d01 0 0 10px 0;
+}
+
+.card1:active {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #ff1d01;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.02;
+  background-color: #0090d0;
+  box-shadow: #0090d0 0 0 10px 0;
+}
+
+.card2:active {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #0090d0;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.02;
+  background-color: #d00000;
+  box-shadow: #d00000 0 0 10px 0;
+  
+}
+
+.card3:active {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #d00000;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.02;
+  background-color: #0046ac;
+  box-shadow: #0046ac 0 0 10px 0;
+
+}
+
+.card4:active {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #0046ac;
+}
+
+.card5:hover {
+  cursor: pointer;
+  scale: 1.02;
+  background-color: #71c0f5;
+  box-shadow: #71c0f5 0 0 10px 0;
+
+}
+
+.card5:active {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #999999;
+}
+
+.pagnews {
+  display: flex;
+  flex-direction: row;
+  width: 97vw;
+  height: 80vh;
+  margin-left:1.3em;
+}
+
+.news {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0.8em;
+  width: 32vw;
+  height: 72vh;
+  padding: 5px;
+  color: whitesmoke;
+  flex-direction: column;
+  border-bottom: 2px solid white;
+}
+
+.titulonews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 4px solid #5189cf;
+  border-radius: 15px;
+  box-shadow: #254770 0 0 10px 1px;
+  height: 10vh;
+  width: 20vw;
+  font-size: 4vh;
+  letter-spacing: 5px;
+  font-family: 'Kanit', 'Sans-serif';
+  color: #5189cf;
+  text-shadow: #0046ac 0 0 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.tituloarticulo {
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid #df0d0d;
+  border-right: 3px solid #df0d0d;
+  box-shadow: #700808 2px 2px 2px 1px;
+  border-radius: 10px;
+  padding: 5px;
+  height: 5vh;
+  font-size: 3.9vh;
+  width: 25vw;
+  margin-top: 10px;
+  color: #ca2828;
+  text-shadow: 0 0 5px;
+  font-family: 'Kanit', 'Sans-serif';
+
+}
+
+.articulo {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+  font-family: 'Kanit', 'Sans-serif';
+  height: 72vh;
+  width: 32vw;
+  font-size: 3.3vh;
+  text-align: justify;
+  flex-direction: column;
+  color: #d1d1d1;
+}
+
+a {
+  text-decoration: none;
+  margin-top: -50px;
+}
+
+.vegaslayout {
+  display: flex;
+  width: 27.5vw;
+  height: 60vh;
+  margin: auto;
+  box-shadow: rgb(174, 33, 33) 0 0 20px 0;
+  border-radius: 5px;
+  border:7px solid #df0d0d
+}
+
+.vegasresult {
+  display: flex;
+  width: 30vw;
+  height: 55vh;
+  margin: auto;
+  border: 7px solid #2159ae;
+  box-shadow: #2159ae 0 0 30px 0;
+  border-radius: 5px;
+}
+
+/*Adapatado para moviles*/
+@media only screen and (max-width:768px) {
+
+  .contenedorb {
+    display: flex;
+    width: 97vw;
+    height: 222vh;
+    background-color: #1f222c;
+  }
+
+  .contenedorcabecera {
+    height: 50vh;
+    width: 96vw;
+    margin-top: 0em;
+  }
+
+  .contenedormenu {
+    margin-top: -1.75em;
+    width: 97vw;
+    height: 20vh;
+    margin-left: 0em;
+  }
+
+  .card1, .card2, .card3, .card4 {
+    margin-right: 0em;
+    width: 17vw;
+    height: 16vh;
+    margin-top: 15vh;
+
+  }
+
+  .card5 {
+    margin-top: 15vh;
+    width: 17vw;
+    height: 16vh;
+  }
+
+  .apxrevmini {
+    width: 12vw;
+    height: 6vh;
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+
+  .f1,
+  .f2,
+  .f3 {
+    width: 8vw;
+    height: 3vh;
+  }
+
+  .wec {
+    width: 9vw;
+    height: 3vh;
+  }
+
+  .pagnews {
+    display: flex;
+    flex-direction: column;
+    width: 97vw;
+    height: 80vh;
+    margin-top:-30vh;
+    margin-left:0em;
+  }
+
+  .news {
+    border: 0;
+    margin-left: 0.5em;
+    width: 93vw;
+    height: 73vh;
+    flex-direction: column;
+    border-bottom: 2px solid white;
+    padding-bottom: 1em;
+  }
+
+  .tituloarticulo {
+    font-size: 3.9vh;
+    width: 60vw;
+  }
+
+    .titulonews {
+      margin-left: 0em;
+      height: 10vh;
+      width: 45vw;
+      font-size: 4vh;
+      letter-spacing: 5px;
+      padding-bottom: 5px;
+      margin-bottom: 0;
+    }
+   
+    .articulo {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      font-family: 'Kanit', 'Sans-serif';
+      height: 72vh;
+      width: 90vw;
+      font-size: 3.5vh;
+    }
+
+    .vegaslayout {
+      width: 60vw;
+      height: 50vh;
+    }
+    
+    .vegasresult {
+      width: 80vw;
+      height: 55vh;
+    }
+}
+
+/*Adaptado a tablets*/
+@media only screen and (min-width:768px) and (max-width:1024px) {
+  .contenedorb {
+    display: flex;
+    width: 97vw;
+    height: 222vh;
+    background-color: #1f222c;
+  }
+
+  .contenedorcabecera {
+    height: 50vh;
+    width: 96vw;
+    margin-top: 0em;
+  }
+
+
+  .contenedormenu {
+    margin-top: -1.75em;
+    width: 97vw;
+    height: 20vh;
+    margin-left: 0em;
+  }
+
+  .card1,.card3, .card4 {
+    margin-right: 0em;
+    width: 17vw;
+    height: 16vh;
+    margin-top:15vh;
+
+  }
+
+  .card5 {
+    margin-top:15vh;
+    width: 17vw;
+    height: 16vh;
+  }
+
+  .apxrevmini {
+    width: 12vw;
+    height: 6vh;
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+
+  .f1,
+  .f3 {
+    width: 8vw;
+    height: 3vh;
+  }
+
+  .wec {
+    width: 9vw;
+    height: 3vh;
+  }
+
+  .pagnews {
+    display: flex;
+    flex-direction: column;
+    width: 97vw;
+    height: 80vh;
+    margin-top:-30vh;
+    margin-left:0em;
+  }
+
+  .news {
+    border: 0;
+    margin-left: 0.5em;
+    width: 93vw;
+    height: 73vh;
+    flex-direction: column;
+    border-bottom: 2px solid white;
+    padding-bottom: 1em;
+  }
+
+  .tituloarticulo {
+    font-size: 3.9vh;
+    width: 60vw;
+  }
+
+    .titulonews {
+      margin-left: 0em;
+      height: 10vh;
+      width: 45vw;
+      font-size: 4vh;
+      letter-spacing: 5px;
+      padding-bottom: 5px;
+      margin-bottom: 0;
+    }
+   
+    .articulo {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      font-family: 'Kanit', 'Sans-serif';
+      height: 72vh;
+      width: 90vw;
+      font-size: 3.9vh;
+    }
+
+    .vegaslayout {
+      width: 45vw;
+      height: 50vh;
+    }
+    
+    .vegasresult {
+      width: 60vw;
+      height: 55vh;
+    }
+}
